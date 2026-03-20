@@ -21,5 +21,16 @@ if setting == "Jungle":
     else:
         print ("Wrong answer, You lose. ")
         quit()
-#tutorial used
-#https://youtu.be/u8X6TiJA8as?t=663
+if setting == "desert":
+    print ("Welcome to the Sahara Desert! Your tour guide told you to wait here.... ")
+    response = input("But he left to get ice-cream. Follow him or wait here? ")
+    if response == "Follow":
+     print ("You follow him into the dunes... ")
+    elif response == "Wait":
+        print ("You wait another 10mins and he still isn't here")
+        #ending 1/3
+    else:
+        print ("Wrong answer, You lose. ")
+        quit()
+
+#https://youtu.be/u8X6TiJA8as?t=757
