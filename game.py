@@ -1,3 +1,5 @@
+rewards = ["kebabs", "banana", "knuckle sandwich"]
+
 #intoduction
 def introduction():
     Name = input("Enter your name! ")
@@ -22,7 +24,8 @@ if setting == "jungle":
         if response =="fight":
                 print ("You became their midday snack. ")
         elif response =="Leave them be":
-            print ("They gave you a banana and accepted you in their family")
+            print ("They were thankful and accepted you in their family")
+            print("Reward:" + rewards [1])
     elif response =="Wait":
         print ("You wait another 10mins and he still isn't here")
         #ending 1/3
@@ -34,19 +37,26 @@ if setting == "desert":
     print ("Welcome to the Sahara Desert! Your tour guide told you to wait here.... ")
     response = input("But he left to get ice-cream. Follow him or wait here? ")
     if response == "Follow":
-     print ("You follow him into the dunes... ")
+        print ("You follow him into the dunes and see a child. ")
+        response = input ("Do you give them a knuckle sandwich or the cheese touch? ")
+        if input == "cheese touch":
+            print ("he passed it on to your guide")
+        elif input == "knuckle sandwich":
+            print ("He gave you one back :D")
     elif response == "Wait":
         print ("You wait another 10mins and he still isn't here. ")
         #ending 1/3
     else:
         print ("Wrong answer, You lose. ")
         quit()
-        
+
 if setting == "tundra":
     print ('Welcome to the Tundra! Your tour guide turned into a human lolly! ')
     response = input ("Do you unfreeze him or abandon him? ")
     if response == "unfreeze":
-            print ('He gave you 5 kebabs for your act of kindness :D ')
+            print ('He was grateful for your act of kindness :D ')
+            print ("Reward:" + rewards[0])
     elif response == "abandon":
             print ("He turned you into a kebab.")
+
 #ending 3/3
